@@ -1,19 +1,17 @@
 import { FC, useState, useEffect } from 'react';
 
+import SEO from '@config/next-seo';
 import { DefaultSeo } from 'next-seo';
 import { AppProps } from 'next/app';
 import { useRouter } from 'next/router';
 import { Provider } from 'react-redux';
-import { GlobalStyle } from '../src/styles';
-import { ThemeProvider } from 'styled-components';
-import theme from 'src/styles/theme/theme';
-import SEO from '@config/next-seo';
 import { store } from 'src/redux/store';
+import theme from 'src/styles/theme/theme';
+import { ThemeProvider } from 'styled-components';
 
-const MyApp: FC<AppProps> = ({
-  Component,
-  pageProps: { session, ...pageProps },
-}) => {
+import { GlobalStyle } from '../src/styles';
+
+const MyApp: FC<AppProps> = ({ Component, pageProps: { ...pageProps } }) => {
   const [mounted, setMounted] = useState(false);
   const { asPath } = useRouter();
 
