@@ -24,8 +24,5 @@
   "devDependencies": {
     "@next/eslint-plugin-next": "^12.1.4",
     "babel-eslint": "^10.1.0"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }
