@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "webs",
+  "info": {
+    "singularName": "web",
+    "pluralName": "webs",
+    "displayName": "web"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "details": {
+      "type": "component",
+      "repeatable": true,
+      "component": "work.work"
+    },
+    "slug": {
+      "type": "uid"
+    }
+  }
+}
