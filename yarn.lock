@@ -1263,6 +1263,21 @@
   dependencies:
     tslib "^2.0.1"
 
+"@fontsource/montserrat@^4.5.10":
+  version "4.5.10"
+  resolved "https://registry.yarnpkg.com/@fontsource/montserrat/-/montserrat-4.5.10.tgz#0dc94425c575c785c2ac92d244c543bfbb005080"
+  integrity sha512-JXe9wURwLFtPfrD3yYnfvue/Uv2L1iSEor4w6M5CcGO4iWSoaFgk7BPLUwksGD7ChKpGKpaNNLUt67VlCu2A1g==
+
+"@fontsource/oxygen@^4.5.7":
+  version "4.5.7"
+  resolved "https://registry.yarnpkg.com/@fontsource/oxygen/-/oxygen-4.5.7.tgz#3feae2e480e43b451b00473eb404c2e997c84bce"
+  integrity sha512-QqVrkWwwVpQEm/b1M8Bhjdu0yw0iEEGMxHY1l8VgbrYgjqYxzf8fqcHhM8+EdaPig0qroUnLH1jty0iKvd3zBQ==
+
+"@fontsource/prompt@^4.5.8":
+  version "4.5.8"
+  resolved "https://registry.yarnpkg.com/@fontsource/prompt/-/prompt-4.5.8.tgz#129f14f2d403fa44633d46f6891fc2fc5b5a2a13"
+  integrity sha512-Ddb1cq7nZlG+VIN25bpmrAFboZq1R6QbutKYUB6sRWE0w4ZWKjRmys1IxW2GV0QIQ476wUTDx/6T2s3we2XKPw==
+
 "@formatjs/ecma402-abstract@1.9.3":
   version "1.9.3"
   resolved "https://registry.yarnpkg.com/@formatjs/ecma402-abstract/-/ecma402-abstract-1.9.3.tgz#00892014c805935b5b1345d238246e9bf3a2de50"
