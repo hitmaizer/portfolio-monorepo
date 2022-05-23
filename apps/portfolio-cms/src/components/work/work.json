@@ -1,0 +1,42 @@
+{
+  "collectionName": "components_work_works",
+  "info": {
+    "displayName": "work",
+    "icon": "ad"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "category": {
+      "type": "string",
+      "required": true
+    },
+    "img": {
+      "allowedTypes": ["images", "files", "videos", "audios"],
+      "type": "media",
+      "multiple": false
+    },
+    "demo": {
+      "type": "string",
+      "required": false,
+      "unique": true
+    },
+    "code": {
+      "type": "string",
+      "required": false,
+      "unique": true
+    },
+    "link": {
+      "type": "string",
+      "unique": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    }
+  }
+}
