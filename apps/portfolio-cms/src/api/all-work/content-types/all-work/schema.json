@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "all_works",
+  "info": {
+    "singularName": "all-work",
+    "pluralName": "all-works",
+    "displayName": "all-work",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "reacts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::work.work"
+    },
+    "uis": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::ui.ui"
+    },
+    "webs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::web.web"
+    },
+    "others": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::other.other"
+    }
+  }
+}
