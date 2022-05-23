@@ -2,9 +2,9 @@
   "name": "portfolio-cms",
   "private": true,
   "version": "0.1.0",
-  "description": "A Strapi application",
+  "description": "Jose Alves Portfolio CMS",
   "scripts": {
-    "develop": "strapi develop",
+    "dev": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
     "strapi": "strapi"
@@ -17,7 +17,7 @@
     "better-sqlite3": "7.4.6"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "Jose Alves"
   },
   "strapi": {
     "uuid": "d32795bf-47a5-49c3-ac32-05f2e4f50dea"
