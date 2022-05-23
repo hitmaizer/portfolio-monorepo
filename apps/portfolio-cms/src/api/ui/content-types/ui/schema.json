@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "uis",
+  "info": {
+    "singularName": "ui",
+    "pluralName": "uis",
+    "displayName": "UI"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "slug": {
+      "type": "uid"
+    },
+    "details": {
+      "type": "component",
+      "repeatable": true,
+      "component": "work.work"
+    }
+  }
+}
