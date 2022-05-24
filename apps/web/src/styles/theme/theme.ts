@@ -1,4 +1,4 @@
-export default {
+const theme = {
   theme: {
     colors: {
       lightTheme: {
@@ -46,5 +46,12 @@ export default {
       gradient:
         'linear-gradient(0deg, rgba(252,252,252,1) 0%, rgba(242,242,242,1) 100%)',
     },
+    fonts: {
+      montserrat: '"Montserrat", sans-serif;',
+      oxygen: '"Oxygen", sans-serif;',
+      prompt: '"Prompt", sans-serif;',
+    },
   },
 };
+
+export default theme;
