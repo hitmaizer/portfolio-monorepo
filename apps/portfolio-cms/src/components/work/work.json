@@ -2,23 +2,14 @@
   "collectionName": "components_work_works",
   "info": {
     "displayName": "work",
-    "icon": "ad"
+    "icon": "ad",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "title": {
-      "type": "string",
-      "required": true,
-      "unique": true
-    },
     "category": {
       "type": "string",
       "required": true
-    },
-    "img": {
-      "allowedTypes": ["images", "files", "videos", "audios"],
-      "type": "media",
-      "multiple": false
     },
     "demo": {
       "type": "string",

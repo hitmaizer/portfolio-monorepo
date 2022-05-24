@@ -12,11 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "reacts": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::work.work"
-    },
     "uis": {
       "type": "relation",
       "relation": "oneToMany",
@@ -31,6 +26,11 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::other.other"
+    },
+    "reacts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::react.react"
     }
   }
 }
