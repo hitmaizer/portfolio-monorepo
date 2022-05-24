@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "uis",
+  "collectionName": "reacts",
   "info": {
-    "singularName": "ui",
-    "pluralName": "uis",
-    "displayName": "UI",
+    "singularName": "react",
+    "pluralName": "reacts",
+    "displayName": "react",
     "description": ""
   },
   "options": {
@@ -18,7 +18,7 @@
     },
     "details": {
       "type": "component",
-      "repeatable": true,
+      "repeatable": false,
       "component": "work.work"
     },
     "title": {

@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- *  work controller
+ *  react controller
  */
 
 const { createCoreController } = require('@strapi/strapi').factories;
 
-module.exports = createCoreController('api::work.work');
+module.exports = createCoreController('api::react.react');

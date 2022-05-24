@@ -29,11 +29,5 @@
       "@components/*": ["./src/components/*"]
     }
   },
-  "include": [
-    ".eslintrc.js",
-    "**/*.tsx",
-    "**/*.ts",
-    "*.config.js",
-    "pages/api/auth/[...nextauth].ts"
-  ]
+  "include": [".eslintrc.js", "**/*.tsx", "**/*.ts", "*.config.js"]
 }
