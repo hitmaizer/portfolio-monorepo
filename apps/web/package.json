@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@fontsource/montserrat": "^4.5.10",
+    "@fontsource/montserrat": "4.5.10",
     "@fontsource/oxygen": "^4.5.7",
     "@fontsource/prompt": "^4.5.8",
     "@reduxjs/toolkit": "^1.8.1",
