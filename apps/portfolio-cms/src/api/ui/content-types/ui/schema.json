@@ -18,7 +18,7 @@
     },
     "details": {
       "type": "component",
-      "repeatable": true,
+      "repeatable": false,
       "component": "work.work"
     },
     "title": {
@@ -27,10 +27,10 @@
       "unique": true
     },
     "image": {
-      "allowedTypes": ["images", "files"],
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": true,
+      "allowedTypes": ["images", "files"]
     }
   }
 }
