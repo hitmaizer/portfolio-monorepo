@@ -4,7 +4,8 @@
   "info": {
     "singularName": "other",
     "pluralName": "others",
-    "displayName": "other"
+    "displayName": "other",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -17,7 +18,19 @@
       "component": "work.work"
     },
     "slug": {
-      "type": "uid"
+      "type": "uid",
+      "targetField": "title"
+    },
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "image": {
+      "allowedTypes": ["images", "files"],
+      "type": "media",
+      "multiple": false,
+      "required": true
     }
   }
 }
