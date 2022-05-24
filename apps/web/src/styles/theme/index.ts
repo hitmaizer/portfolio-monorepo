@@ -5,12 +5,6 @@ const theme = {
   breakpoints,
   mediaQueries,
 
-  fonts: {
-    body: '"Montserrat", system-ui, -apple-system, "Segoe UI", "Roboto", "Helvetica Neue", "Noto Sans", "Liberation Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"',
-    heading:
-      '"Oxygen", system-ui, -apple-system, "Segoe UI", "Roboto", "Helvetica Neue", "Noto Sans", "Liberation Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"',
-  },
-
   colors: {
     body: '#F2F2F2',
     text: '#4F4F4F',
