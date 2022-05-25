@@ -17,4 +17,8 @@ export const Text = styled.p<TextProps>`
   ${space}
   ${textTransform}
   ${fontWeight}
+  font-family: ${({ theme }) => theme.prompt};
+  font-weight: 300;
+  line-height: 24px;
+  font-size: 18px;
 `;

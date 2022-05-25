@@ -18,12 +18,10 @@ const TextElement: TextWithRefType = (props, ref) => {
 const Text = forwardRef(TextElement);
 
 Text.defaultProps = {
-  fontFamily: 'body',
   textTransform: 'none',
   size: 'md',
   as: 'p',
   textAlign: 'inherit',
-  children: 'This is a text component',
 };
 
 export default Text;
