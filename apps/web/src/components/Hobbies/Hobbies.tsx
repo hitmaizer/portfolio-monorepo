@@ -18,19 +18,28 @@ const Hobbies = ({ children, ...rest }: HobbiesProps) => {
             Hobbies
           </Heading>
           <Image src="/gaming-light.svg" width="240px" height="324px" />
-          <Heading oxygen size="lg" mt={4}>
+          <Heading oxygen size="lg" mt={4} fontWeight="bold">
             Gaming
           </Heading>
           <Text mt={2}>Certified videogamer since the 90&apos;s.</Text>
+          <Image src="/music-light.svg" width="240px" height="324px" />
+          <Heading oxygen size="lg" mt={4} fontWeight="bold">
+            Music
+          </Heading>
+          <Text mt={2}>
+            Can&apos;t imagine life without music.
+            <br /> I&apos;ve worked on several music projects, both as an artist
+            and as a music lable co-owner.
+          </Text>
           <Image src="/sports-light.svg" width="240px" height="324px" />
-          <Heading oxygen size="lg" mt={4}>
+          <Heading oxygen size="lg" mt={4} fontWeight="bold">
             Sports
           </Heading>
           <Text mt={2}>
             Sports lover. Love watching pretty much every sport!
           </Text>
           <Image src="/watching-light.svg" width="240px" height="324px" />
-          <Heading oxygen size="lg" mt={4}>
+          <Heading oxygen size="lg" mt={4} fontWeight="bold">
             Series and movies
           </Heading>
           <Text mt={2}>
