@@ -12,25 +12,24 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "uis": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::ui.ui"
+    "details": {
+      "type": "component",
+      "repeatable": false,
+      "component": "work.work"
     },
-    "webs": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::web.web"
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
     },
-    "others": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::other.other"
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
     },
-    "reacts": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::react.react"
+    "image": {
+      "allowedTypes": ["images", "files"],
+      "type": "media",
+      "multiple": false
     }
   }
 }
