@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 import { color, space, textAlign, typography, variant } from 'styled-system';
 
-import { StyledHeadingProps } from './Heading.types';
+import { HeadingProps } from './Heading.types';
 
 const size = variant({
   prop: 'size',
@@ -29,7 +29,7 @@ const size = variant({
   },
 });
 
-export const Heading = styled.h1<StyledHeadingProps>`
+export const Heading = styled.h1<HeadingProps>`
   font-family: ${({ theme }) => theme.fonts.montserrat};
   max-width: 940px;
   color: ${({ theme }) => theme.text};
@@ -45,5 +45,15 @@ export const Heading = styled.h1<StyledHeadingProps>`
     css`
       font-family: ${({ theme }) => theme.fonts.oxygen};
       color: ${({ theme }) => theme.primaryBlue};
+    `}
+    
+  ${({ subtitle }) =>
+    subtitle &&
+    css`
+      font-family: ${({ theme }) => theme.fonts.montserrat};
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      color: ${({ theme }) => theme.subText};
     `}
 `;
