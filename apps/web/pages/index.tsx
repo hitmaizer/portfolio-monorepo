@@ -1,4 +1,5 @@
 import Certifications from '@components/Certifications';
+import Filter from '@components/Filter';
 import Hobbies from '@components/Hobbies';
 import { Homepage } from '@components/Homepage/Homepage.styles';
 import Intro from '@components/Intro';
@@ -10,7 +11,7 @@ import { Stack } from '@components';
 const Home: NextPage = () => {
   return (
     <Homepage>
-      <Stack display="flex" vertical>
+      <Stack display="flex" vertical gridGap="32px">
         <Stack
           display="flex"
           justifyContent="space-between"
@@ -20,15 +21,11 @@ const Home: NextPage = () => {
           <Intro />
           <Socials />
         </Stack>
-        <Stack
-          mt="32px"
-          display="flex"
-          justifyContent="space-between"
-          gridGap="32px"
-        >
+        <Stack display="flex" justifyContent="space-between" gridGap="32px">
           <Hobbies />
           <Certifications />
         </Stack>
+        <Filter />
       </Stack>
     </Homepage>
   );
