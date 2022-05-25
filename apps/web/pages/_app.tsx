@@ -26,7 +26,7 @@ const MyApp: FC<AppProps> = ({ Component, pageProps: { ...pageProps } }) => {
   return (
     <>
       <Provider store={store}>
-        <ThemeProvider theme={theme}>
+        <ThemeProvider theme={theme.theme.colors.lightTheme}>
           <DefaultSeo
             canonical={canonicalUrl}
             openGraph={{
