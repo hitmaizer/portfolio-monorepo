@@ -63,8 +63,13 @@ export const Button = styled.button<ButtonProps>`
       border: 1px solid ${({ theme }) => theme.cardTitle1};
       background: transparent;
       color: ${({ theme }) => theme.cardTitle1};
-      &:hover {
-        transform: translateY(0%);
-      }
+    `}
+
+    ${({ selected }) =>
+    selected &&
+    css`
+      background-color: ${({ theme }) => theme.primaryBlue};
+      border: 1px solid ${({ theme }) => theme.primaryBlue};
+      color: ${({ theme }) => theme.btnText};
     `}
 `;

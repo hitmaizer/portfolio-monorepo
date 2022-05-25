@@ -8,10 +8,12 @@ const Button = ({
   outline,
   primary,
   filterBtn,
+  selected,
   ...rest
 }: ButtonProps) => {
   return (
     <S.Button
+      selected={selected}
       outline={outline}
       primary={primary}
       filterBtn={filterBtn}
