@@ -5,4 +5,5 @@ export interface ButtonProps {
   outline?: boolean;
   primary?: boolean;
   filterBtn?: boolean;
+  selected?: boolean;
 }
