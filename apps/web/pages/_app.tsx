@@ -10,6 +10,7 @@ import theme from 'src/styles/theme/theme';
 import { ThemeProvider } from 'styled-components';
 
 import { GlobalStyle } from '../src/styles';
+import '../src/styles/fonts';
 
 const MyApp: FC<AppProps> = ({ Component, pageProps: { ...pageProps } }) => {
   const [mounted, setMounted] = useState(false);
@@ -25,7 +26,7 @@ const MyApp: FC<AppProps> = ({ Component, pageProps: { ...pageProps } }) => {
   return (
     <>
       <Provider store={store}>
-        <ThemeProvider theme={theme}>
+        <ThemeProvider theme={theme.theme.colors.lightTheme}>
           <DefaultSeo
             canonical={canonicalUrl}
             openGraph={{
