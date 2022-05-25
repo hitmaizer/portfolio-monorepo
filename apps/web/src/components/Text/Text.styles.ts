@@ -19,6 +19,11 @@ export const Text = styled.p<TextProps>`
   ${fontWeight}
   font-family: ${({ theme }) => theme.prompt};
   font-weight: 300;
-  line-height: 24px;
+  line-height: 32px;
   font-size: 18px;
+  max-width: 730px;
+  b {
+    color: ${({ theme }) => theme.primaryBlue};
+    font-weight: 600;
+  }
 `;
