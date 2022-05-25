@@ -16,9 +16,7 @@ export const Button = styled.button<ButtonProps>`
   ${mediaQueries.sm} {
     padding: 12px 32px;
   }
-  &:hover {
-    transform: translateY(-3%);
-  }
+
   ${({ primary }) =>
     primary &&
     css`
