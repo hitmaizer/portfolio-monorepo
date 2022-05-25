@@ -5,13 +5,13 @@ import { ButtonProps } from './Button.types';
 
 export const Button = styled.button<ButtonProps>`
   border-radius: 8px;
-  font-family: ${(theme) => theme.theme.fonts.font};
-  font-weight: 500;
+  font-family: ${({ theme }) => theme.fonts.montserrat};
+  font-weight: 400;
   font-size: 18px;
   line-height: 22px;
   padding: 6px 18px;
   cursor: pointer;
-  transition: all 1ms ease-out;
+  transition: all 300ms ease;
   max-height: 46px;
   ${mediaQueries.sm} {
     padding: 12px 32px;
@@ -22,48 +22,49 @@ export const Button = styled.button<ButtonProps>`
   ${({ primary }) =>
     primary &&
     css`
+      color: ${({ theme }) => theme.btnText};
       border: none;
-      background-color: ${(theme) => theme.theme.colors.primaryBlue};
+      background-color: ${({ theme }) => theme.primaryBlue};
       a,
       a:visited,
       a:hover,
       a:active {
-        color: ${(theme) => theme.theme.colors.btnText};
+        color: ${({ theme }) => theme.btnText};
         &: hover {
-          color: ${(theme) => theme.theme.colors.btnText};
+          color: ${({ theme }) => theme.btnText};
         }
       }
       &:hover {
-        background-color: ${(theme) => theme.theme.colors.darkenBlue};
-        color: ${(theme) => theme.theme.colors.btnText};
+        background-color: ${({ theme }) => theme.darkenBlue};
+        color: ${({ theme }) => theme.btnText};
       }
     `}
   ${({ outline }) =>
     outline &&
     css`
-      border: 2px solid ${(theme) => theme.theme.colors.primaryBlue};
+      border: 2px solid ${({ theme }) => theme.primaryBlue};
       background: transparent;
       a,
       a:visited,
       a:hover,
       a:active {
-        color: ${(theme) => theme.theme.colors.primaryBlue};
+        color: ${({ theme }) => theme.primaryBlue};
       }
       &:hover {
-        background: ${(theme) => theme.theme.colors.darkenBlue};
-        color: ${(theme) => theme.theme.colors.btnText};
-        border: 2px solid ${(theme) => theme.theme.colors.darkenBlue};
+        background: ${({ theme }) => theme.darkenBlue};
+        color: ${({ theme }) => theme.btnText};
+        border: 2px solid ${({ theme }) => theme.darkenBlue};
         a {
-          color: ${(theme) => theme.theme.colors.btnText};
+          color: ${({ theme }) => theme.btnText};
         }
       }
     `}
   ${({ filterBtn }) =>
     filterBtn &&
     css`
-      border: 1px solid ${(theme) => theme.theme.colors.cardTitle1};
+      border: 1px solid ${({ theme }) => theme.cardTitle1};
       background: transparent;
-      color: ${(theme) => theme.theme.colors.cardTitle1};
+      color: ${({ theme }) => theme.cardTitle1};
       &:hover {
         transform: translateY(0%);
       }
