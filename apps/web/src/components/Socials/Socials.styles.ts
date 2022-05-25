@@ -8,6 +8,7 @@ import styled from 'styled-components';
 
 export const Socials = styled.div`
   width: 100%;
+  max-width: 334px;
 `;
 
 export const TwitterLogo = styled(Twitter)`
