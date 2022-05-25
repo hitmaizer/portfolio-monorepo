@@ -20,7 +20,7 @@ const Socials = ({ children, ...rest }: SocialsProps) => {
           alignItems="center"
           height="100%"
         >
-          <Heading fontWeight="medium" size="2xl">
+          <Heading fontWeight="medium" size="xl">
             Follow my socials!
           </Heading>
           <Stack
