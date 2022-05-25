@@ -20,7 +20,7 @@ const theme = {
           oxygen: '"Oxygen", sans-serif;',
           prompt: '"Prompt", sans-serif;',
         },
-        dropShadow: '0px 0px 0px rgba(51, 51, 51, 0.1);',
+        dropShadow: '0px 18px 50px -10px rgba(0, 0, 0, 0.2);',
         gradient:
           'linear-gradient(0deg, rgba(252,252,252,1) 0%, rgba(242,242,242,1) 100%)',
       },
