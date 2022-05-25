@@ -58,7 +58,9 @@ const Socials = ({ children, ...rest }: SocialsProps) => {
               <S.TwitterLogo />
             </a>
           </Stack>
-          <Button primary>Let&apos;s see some works!</Button>
+          <Button primary>
+            <a href="#works">Let&apos;s see some works!</a>
+          </Button>
         </Stack>
       </Card>
       {children}

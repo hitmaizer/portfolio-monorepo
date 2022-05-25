@@ -7,7 +7,7 @@ export const Grid = styled.div`
 
   ${mediaQueries.sm} {
     display: grid;
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(3, auto);
     gap: 32px;
     max-width: 1440px;
   }

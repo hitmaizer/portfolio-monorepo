@@ -42,6 +42,10 @@ export const Button = styled.button<ButtonProps>`
     css`
       border: 2px solid ${({ theme }) => theme.primaryBlue};
       background: transparent;
+      a {
+        font-weight: 600;
+        transition: all 300ms ease;
+      }
       a,
       a:visited,
       a:hover,
