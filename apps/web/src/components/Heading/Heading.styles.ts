@@ -30,10 +30,10 @@ const size = variant({
 });
 
 export const Heading = styled.h1<StyledHeadingProps>`
-  font-family: ${({ theme }) => theme.theme.colors.lightTheme.fonts.montserrat};
-  font-weight: 300;
+  font-family: ${({ theme }) => theme.fonts.montserrat};
   max-width: 940px;
-  /* text-align: center; */
+  color: ${({ theme }) => theme.text};
+
   ${textAlign}
   ${typography}
   ${space}
@@ -43,6 +43,7 @@ export const Heading = styled.h1<StyledHeadingProps>`
   ${({ oxygen }) =>
     oxygen &&
     css`
-      font-family: ${({ theme }) => theme.theme.colors.lightTheme.fonts.oxygen};
+      font-family: ${({ theme }) => theme.fonts.oxygen};
+      color: ${({ theme }) => theme.primaryBlue};
     `}
 `;
