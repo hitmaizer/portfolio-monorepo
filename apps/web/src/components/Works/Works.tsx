@@ -16,7 +16,9 @@ const Works = ({ children, ...rest }: WorksProps) => {
     async function fetchData() {
       setLoading(true);
       const request = await axios
-        .get('https://portfolio-monorepo.herokuapp.com/api/reacts?populate=*')
+        .get(
+          'https://portfolio-monorepo.herokuapp.com/api/all-works?populate=*'
+        )
         .then((res) => setDisplayWorks(res.data?.data))
         .catch((err) => setError(err))
         .finally(() => setLoading(false));
