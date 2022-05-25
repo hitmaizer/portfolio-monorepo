@@ -13,6 +13,7 @@ export interface HeadingProps extends LayoutProps, SpaceProps, TextAlignProps {
   color?: string;
   children?: React.ReactNode;
   oxygen?: boolean;
+  subtitle?: boolean;
 }
 
 export type StyledHeadingProps = Pick<HeadingProps, 'oxygen'>;
