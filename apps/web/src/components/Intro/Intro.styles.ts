@@ -6,11 +6,11 @@ export const Intro = styled.div`
 `;
 
 export const EmailIcon = styled(Email)`
-  width: 32px;
+  width: 24px;
   color: ${({ theme }) => theme.text};
 `;
 
 export const PhoneIcon = styled(Phone)`
-  width: 32px;
+  width: 24px;
   color: ${({ theme }) => theme.text};
 `;
