@@ -40,8 +40,9 @@ const GlobalStyle = createGlobalStyle`
       border: none;
   }
   
-  a {
+  a, a:visited {
       text-decoration: none;   
+      color: inherit;
   }
   body {
     overflow-x: hidden;
