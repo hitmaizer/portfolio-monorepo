@@ -4,6 +4,7 @@ import Hobbies from '@components/Hobbies';
 import { Homepage } from '@components/Homepage/Homepage.styles';
 import Intro from '@components/Intro';
 import Socials from '@components/Socials';
+import Works from '@components/Works';
 import type { NextPage } from 'next';
 
 import { Stack } from '@components';
@@ -26,6 +27,7 @@ const Home: NextPage = () => {
           <Certifications />
         </Stack>
         <Filter />
+        <Works id="works" />
       </Stack>
     </Homepage>
   );
