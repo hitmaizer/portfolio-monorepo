@@ -31,6 +31,7 @@ const GlobalStyle = createGlobalStyle`
   @supports (font-variation-settings: normal) {
     html {
       font-family: "Montserrat", sans-serif;
+      scroll-behavior: smooth;
     }
   }
   
@@ -40,8 +41,9 @@ const GlobalStyle = createGlobalStyle`
       border: none;
   }
   
-  a {
+  a, a:visited {
       text-decoration: none;   
+      color: inherit;
   }
   body {
     overflow-x: hidden;
