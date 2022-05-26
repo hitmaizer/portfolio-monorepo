@@ -1,5 +1,4 @@
 import Certifications from '@components/Certifications';
-import Filter from '@components/Filter';
 import Hobbies from '@components/Hobbies';
 import { Homepage } from '@components/Homepage/Homepage.styles';
 import Intro from '@components/Intro';
