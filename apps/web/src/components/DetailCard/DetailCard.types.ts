@@ -5,4 +5,8 @@ export interface DetailCardProps {
   code?: string;
   link?: string | null;
   demo?: string;
+  image?: string;
+  title?: string;
+  description?: string;
+  category?: string;
 }
