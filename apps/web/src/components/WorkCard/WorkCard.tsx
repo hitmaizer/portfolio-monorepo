@@ -37,11 +37,11 @@ const WorkCard = ({
           <Heading fontWeight="bold" size="xl">
             {title}
           </Heading>
-          <Text minHeight="500px">{`${description!.substring(
+          <Text minHeight="500px" card>{`${description!.substring(
             0,
             130
           )} ...`}</Text>
-          {link !== null ? (
+          {link !== null || '' ? (
             <Button primary>See More</Button>
           ) : (
             <>
