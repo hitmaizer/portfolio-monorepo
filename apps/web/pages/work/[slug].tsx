@@ -44,6 +44,10 @@ const Details = ({ work }: Work) => {
       demo={work.details.demo}
       code={work.details.code}
       link={work.details.link}
+      image={work.image.data.url}
+      title={work.title}
+      description={work.details.description}
+      category={work.details.category}
     >
       {work.title}
     </DetailCard>
