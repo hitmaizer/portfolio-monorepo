@@ -1,5 +1,7 @@
 import { ReactNode } from 'react';
 
-export interface CardProps {
+import { FlexboxProps, LayoutProps, SpaceProps } from 'styled-system';
+
+export interface CardProps extends SpaceProps, FlexboxProps, LayoutProps {
   children?: ReactNode;
 }
