@@ -26,7 +26,6 @@ const Home: NextPage = () => {
           <Hobbies />
           <Certifications />
         </Stack>
-        <Filter />
         <Works id="works" />
       </Stack>
     </Homepage>
