@@ -39,6 +39,7 @@ const Works = ({ children, ...rest }: WorksProps) => {
             code={work.details.code}
             demo={work.details.demo}
             link={work.details.link}
+            slug={work.slug}
           />
         ))}
         {children}

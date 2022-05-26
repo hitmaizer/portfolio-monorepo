@@ -9,4 +9,5 @@ export interface WorkCardProps {
   demo?: string;
   code?: string;
   link?: string | null;
+  slug?: string;
 }
