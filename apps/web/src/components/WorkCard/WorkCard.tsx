@@ -6,6 +6,7 @@ import Card from '@components/Card';
 import Heading from '@components/Heading';
 import Stack from '@components/Stack';
 import Text from '@components/Text';
+import Link from 'next/link';
 
 import * as S from './WorkCard.styles';
 import { WorkCardProps } from './WorkCard.types';
@@ -16,52 +17,35 @@ const WorkCard = ({
   title,
   category,
   description,
-  code,
-  link,
-  demo,
+  slug,
   ...rest
 }: WorkCardProps) => {
   return (
     <S.WorkCard {...rest}>
       <Card>
-        <Stack display="flex" vertical gridGap="16px">
-          <Box width="395px" height="200px" position="relative">
-            <S.StyledImage
-              src={imgSrc!}
-              width="100%"
-              height="100%"
-              layout="fill"
-            />
-          </Box>
-          <Heading subtitle>{`# ${category}`}</Heading>
-          <Heading fontWeight="bold" size="xl">
-            {title}
-          </Heading>
-          <Text minHeight="500px" card>{`${description!.substring(
-            0,
-            130
-          )} ...`}</Text>
-          {link !== null || '' ? (
+        <Link href={`work/${slug}`}>
+          <Stack display="flex" vertical gridGap="16px">
+            <Box width="395px" height="200px" position="relative">
+              <S.StyledImage
+                src={imgSrc!}
+                width="100%"
+                height="100%"
+                layout="fill"
+              />
+            </Box>
+            <Heading subtitle>{`# ${category}`}</Heading>
+            <Heading fontWeight="bold" size="xl">
+              {title}
+            </Heading>
+            <Text minHeight="500px" card>{`${description!.substring(
+              0,
+              130
+            )} ...`}</Text>
             <Button primary>See More</Button>
-          ) : (
-            <>
-              <Stack display="flex" gridGap="8px">
-                <Button primary>
-                  <a href={demo} target="_blank" rel="noreferrer">
-                    Demo
-                  </a>
-                </Button>
-                <Button outline>
-                  <a href={code} target="_blank" rel="noreferrer">
-                    Code
-                  </a>
-                </Button>
-              </Stack>
-            </>
-          )}
 
-          {children}
-        </Stack>
+            {children}
+          </Stack>
+        </Link>
       </Card>
     </S.WorkCard>
   );

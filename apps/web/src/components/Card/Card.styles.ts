@@ -1,6 +1,11 @@
 import styled from 'styled-components';
+import { flexbox, layout, space } from 'styled-system';
 
 export const Card = styled.div`
+  ${layout}
+  ${space}
+  ${flexbox}
+  
   gap: 16px;
   padding: 32px;
   width: 100%;
