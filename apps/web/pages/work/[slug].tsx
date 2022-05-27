@@ -48,9 +48,7 @@ const Details = ({ work }: Work) => {
       title={work.title}
       description={work.details.description}
       category={work.details.category}
-    >
-      {work.title}
-    </DetailCard>
+    />
   );
 };
 
