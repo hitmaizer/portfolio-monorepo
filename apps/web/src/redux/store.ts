@@ -1,9 +1,12 @@
 import { Action, configureStore, ThunkAction } from '@reduxjs/toolkit';
 
+import errorSlice from './error';
+import loadingSlice from './loading';
+
 export const store = configureStore({
   reducer: {
-    // This is where we add reducers.
-    // Since we don't have any yet, leave this empty
+    loading: loadingSlice,
+    error: errorSlice,
   },
 });
 
