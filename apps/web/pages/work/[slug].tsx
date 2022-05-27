@@ -3,6 +3,7 @@ import React from 'react';
 import { ParsedUrlQuery } from 'querystring';
 
 import DetailCard from '@components/DetailCard';
+import Loading from '@components/Loading';
 import { WorkObj } from '@components/Works/Works.types';
 import axios from 'axios';
 import { GetStaticPaths, GetStaticProps } from 'next';
@@ -36,7 +37,7 @@ interface Work {
 const Details = ({ work }: Work) => {
   const { isFallback } = useRouter();
   if (isFallback) {
-    return <p>Loading...</p>;
+    return <Loading />;
   }
 
   return (
