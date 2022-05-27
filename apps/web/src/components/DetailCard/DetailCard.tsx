@@ -7,6 +7,7 @@ import Heading from '@components/Heading';
 import Stack from '@components/Stack';
 import Text from '@components/Text';
 import { StyledImage } from '@components/WorkCard/WorkCard.styles';
+import Link from 'next/link';
 
 import * as S from './DetailCard.styles';
 import { DetailCardProps } from './DetailCard.types';
@@ -64,6 +65,11 @@ const DetailCard = ({
                 </Button>
               </>
             )}
+            <Heading oxygen fontWeight="bold" size="lg" mt="32px">
+              <Link href="/#works" passHref>
+                Back to Works
+              </Link>
+            </Heading>
             {children}
           </Stack>
         </Stack>
