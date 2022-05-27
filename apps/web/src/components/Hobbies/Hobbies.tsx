@@ -29,7 +29,7 @@ const Hobbies = ({ children, ...rest }: HobbiesProps) => {
           <Text mt={2}>
             Can&apos;t imagine life without music.
             <br /> I&apos;ve worked on several music projects, both as an artist
-            and as a music lable co-owner.
+            and as a music label co-owner.
           </Text>
           <Image src="/sports-light.svg" width="240px" height="324px" />
           <Heading oxygen size="lg" mt={4} fontWeight="bold">

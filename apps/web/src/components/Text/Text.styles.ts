@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { color, fontWeight, space, style, typography } from 'styled-system';
 
 import { TextProps } from './Text.types';
@@ -22,6 +22,12 @@ export const Text = styled.p<TextProps>`
   line-height: 32px;
   font-size: 18px;
   max-width: 730px;
+
+  ${({ card }) =>
+    card &&
+    css`
+      min-height: 100px;
+    `}
   b {
     color: ${({ theme }) => theme.primaryBlue};
     font-weight: 600;
