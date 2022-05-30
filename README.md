@@ -1,6 +1,6 @@
-# Turborepo starter
-
-This is an official Yarn v1 starter turborepo.
+# Portfolio monorepo
+cenas
+This monorepo was created to develop a personal Portfolio page.
 
 ## What's inside?
 
