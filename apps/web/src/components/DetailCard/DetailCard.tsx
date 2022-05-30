@@ -27,7 +27,7 @@ const DetailCard = ({
     <S.DetailCard {...rest}>
       <Card>
         <Stack display="flex" gridGap="32px" alignItems="center">
-          <Box width="50%" height="500px" position="relative">
+          <Box width="50%" height="700px" position="relative">
             <StyledImage
               src={image!}
               width="100%"
@@ -59,7 +59,7 @@ const DetailCard = ({
             ) : (
               <>
                 <Button primary>
-                  <a href={link!} target="_blank" rel="noreferrer">
+                  <a href={link} target="_blank" rel="noreferrer">
                     See More
                   </a>
                 </Button>
