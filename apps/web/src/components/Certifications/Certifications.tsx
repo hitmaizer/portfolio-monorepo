@@ -36,7 +36,8 @@ const Certifications = ({ children, ...rest }: CertificationsProps) => {
             a tiny bit of <b>JavaScript</b>. <br />
             Eventually, I decided to get into the <b>React</b> library, and I
             have never gone back since.
-            <br /> <b>Next.js</b> is my go to framework for the frontend.
+            <br /> <b>Next.js</b> is my go to framework for the frontend. <br />
+            I handle state management with <b>Redux Toolkit</b>.
             <br /> My styling is done with <b>CSS-in-JS</b>, mostly done with{' '}
             <b>styled-components</b>, most of the times on a <b>Storybook</b>{' '}
             app. <br />
