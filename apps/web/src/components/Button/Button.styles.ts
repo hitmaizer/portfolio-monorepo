@@ -1,20 +1,21 @@
+import { rem } from 'polished';
 import { mediaQueries } from 'src/styles';
 import styled, { css } from 'styled-components';
 
 import { ButtonProps } from './Button.types';
 
 export const Button = styled.button<ButtonProps>`
-  border-radius: 8px;
+  border-radius: ${rem('8px')};
   font-family: ${({ theme }) => theme.fonts.montserrat};
   font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
-  padding: 6px 18px;
+  font-size: ${rem('18px')};
+  line-height: ${rem('22px')};
+  padding: ${rem('6px')} ${rem('18px')};
   cursor: pointer;
   transition: all 300ms ease;
-  max-height: 46px;
+  max-height: ${rem('46px')};
   ${mediaQueries.sm} {
-    padding: 12px 32px;
+    padding: ${rem('12px')} ${rem('32px')};
   }
 
   ${({ primary }) =>
@@ -40,7 +41,7 @@ export const Button = styled.button<ButtonProps>`
   ${({ outline }) =>
     outline &&
     css`
-      border: 2px solid ${({ theme }) => theme.primaryBlue};
+      border: ${rem('2px')} solid ${({ theme }) => theme.primaryBlue};
       background: transparent;
       a {
         font-weight: 600;
@@ -55,7 +56,7 @@ export const Button = styled.button<ButtonProps>`
       &:hover {
         background: ${({ theme }) => theme.darkenBlue};
         color: ${({ theme }) => theme.btnText};
-        border: 2px solid ${({ theme }) => theme.darkenBlue};
+        border: ${rem('2px')} solid ${({ theme }) => theme.darkenBlue};
         a {
           color: ${({ theme }) => theme.btnText};
         }
@@ -64,7 +65,7 @@ export const Button = styled.button<ButtonProps>`
   ${({ filterBtn }) =>
     filterBtn &&
     css`
-      border: 1px solid ${({ theme }) => theme.cardTitle1};
+      border: ${rem('1px')} solid ${({ theme }) => theme.cardTitle1};
       background: transparent;
       color: ${({ theme }) => theme.cardTitle1};
     `}
@@ -73,7 +74,7 @@ export const Button = styled.button<ButtonProps>`
     selected &&
     css`
       background-color: ${({ theme }) => theme.primaryBlue};
-      border: 1px solid ${({ theme }) => theme.primaryBlue};
+      border: ${rem('1px')} solid ${({ theme }) => theme.primaryBlue};
       color: ${({ theme }) => theme.btnText};
     `}
 `;
