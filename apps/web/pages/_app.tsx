@@ -1,5 +1,6 @@
 import { FC, useState, useEffect } from 'react';
 
+import Head from '@components/Head';
 import SEO from '@config/next-seo';
 import { DefaultSeo } from 'next-seo';
 import { AppProps } from 'next/app';
@@ -10,6 +11,7 @@ import theme from 'src/styles/theme/theme';
 import { ThemeProvider } from 'styled-components';
 
 import { GlobalStyle } from '../src/styles';
+
 import '../src/styles/fonts';
 
 const MyApp: FC<AppProps> = ({ Component, pageProps: { ...pageProps } }) => {
@@ -17,7 +19,8 @@ const MyApp: FC<AppProps> = ({ Component, pageProps: { ...pageProps } }) => {
   const { asPath } = useRouter();
 
   const page = asPath === '/' ? '' : asPath;
-  const [canonicalUrl] = `https://radflix.com${page}`.split('?');
+  const [canonicalUrl] =
+    `https://portfolio-monorepo-sand.vercel.app${page}`.split('?');
 
   useEffect(() => {
     setMounted(true);
@@ -37,8 +40,11 @@ const MyApp: FC<AppProps> = ({ Component, pageProps: { ...pageProps } }) => {
             dangerouslySetAllPagesToNoIndex
             {...SEO}
           />
-          <GlobalStyle />
-          {mounted && <Component {...pageProps} />}
+          <Head>
+            <link rel="icon" href="/favicon.ico" />
+            <GlobalStyle />
+            {mounted && <Component {...pageProps} />}
+          </Head>
         </ThemeProvider>
       </Provider>
     </>
