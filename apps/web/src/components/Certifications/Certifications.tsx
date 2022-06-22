@@ -66,7 +66,7 @@ const Certifications = ({ children, ...rest }: CertificationsProps) => {
             familiar with package managers like <b>NPM</b>, and mainly{' '}
             <b>Yarn</b>.
           </Text>
-          <Heading fontWeight="bold" size="2xl" mt={4}>
+          <Heading fontWeight="bold" size="2xl" mt={rem('80px')}>
             Certificates
           </Heading>
           <Stack
@@ -74,7 +74,8 @@ const Certifications = ({ children, ...rest }: CertificationsProps) => {
             vertical
             width="100%"
             placeItems="flex-start"
-            gridGap={rem('32px')}
+            gridGap={rem('64px')}
+            mt={rem('32px')}
           >
             <a
               href="https://www.iscedouro.pt/pt/Oferta-formativa/1-%C2%BA-Ciclo-Licenciaturas/Producao-de-Conteudos-Interativos-e-Multimedia/"
