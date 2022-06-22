@@ -1,4 +1,5 @@
 import Certifications from '@components/Certifications';
+import Header from '@components/Header';
 import Hobbies from '@components/Hobbies';
 import { Homepage } from '@components/Homepage/Homepage.styles';
 import Intro from '@components/Intro';
@@ -12,15 +13,16 @@ const Home: NextPage = ({ works }: any) => {
   return (
     <Homepage>
       <Stack display="flex" vertical gridGap="32px">
-        <Stack
+        <Header
           display="flex"
           justifyContent="space-between"
           gridGap="32px"
           mt="32px"
+          flexDirection="column"
         >
           <Intro />
           <Socials />
-        </Stack>
+        </Header>
         <Stack display="flex" justifyContent="space-between" gridGap="32px">
           <Hobbies />
           <Certifications />
