@@ -14,7 +14,12 @@ const Intro = ({ children, ...rest }: IntroProps) => {
     <>
       <S.Intro {...rest}>
         <Card>
-          <Stack display="flex" alignItems="center" gridGap="32px">
+          <S.IntroStack
+            display="flex"
+            alignItems="center"
+            gridGap="32px"
+            flexDirection="column"
+          >
             <Image src="/avatar-light.svg" width="200px" height="270px" />
             <Stack display="flex" vertical gridGap="32px">
               <Stack
@@ -53,7 +58,7 @@ const Intro = ({ children, ...rest }: IntroProps) => {
               </Text>
             </Stack>
             {children}
-          </Stack>
+          </S.IntroStack>
         </Card>
       </S.Intro>
     </>

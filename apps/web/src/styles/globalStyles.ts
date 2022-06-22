@@ -49,6 +49,15 @@ const GlobalStyle = createGlobalStyle`
     overflow-x: hidden;
   }
   
+   // hide scrollbar 
+   overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    &::-webkit-scrollbar { /* WebKit */
+    width: 0;
+    height: 0;
+    }
+  
 `;
 
 export default GlobalStyle;

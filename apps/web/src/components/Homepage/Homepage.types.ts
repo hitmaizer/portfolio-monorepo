@@ -1,5 +1,16 @@
 import { ReactNode } from 'react';
 
-export interface HomepageProps {
+import {
+  FlexboxProps,
+  GridGapProps,
+  LayoutProps,
+  SpaceProps,
+} from 'styled-system';
+
+export interface HomepageProps
+  extends FlexboxProps,
+    SpaceProps,
+    LayoutProps,
+    GridGapProps {
   children?: ReactNode;
 }
