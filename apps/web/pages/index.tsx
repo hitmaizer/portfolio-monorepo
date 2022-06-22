@@ -3,6 +3,7 @@ import Header from '@components/Header';
 import Hobbies from '@components/Hobbies';
 import { Homepage } from '@components/Homepage/Homepage.styles';
 import Intro from '@components/Intro';
+import Section from '@components/Section';
 import Socials from '@components/Socials';
 import Works from '@components/Works';
 import type { GetStaticProps, NextPage } from 'next';
@@ -23,10 +24,15 @@ const Home: NextPage = ({ works }: any) => {
           <Intro />
           <Socials />
         </Header>
-        <Stack display="flex" justifyContent="space-between" gridGap="32px">
+        <Section
+          display="flex"
+          justifyContent="space-between"
+          gridGap="32px"
+          flexDirection="column"
+        >
           <Hobbies />
           <Certifications />
-        </Stack>
+        </Section>
         <Works id="works" worksData={works.data} />
       </Stack>
     </Homepage>
