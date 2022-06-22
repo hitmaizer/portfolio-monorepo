@@ -1,3 +1,4 @@
+import { rem } from 'polished';
 import styled, { css } from 'styled-components';
 import { color, fontWeight, space, style, typography } from 'styled-system';
 
@@ -19,14 +20,14 @@ export const Text = styled.p<TextProps>`
   ${fontWeight}
   font-family: ${({ theme }) => theme.prompt};
   font-weight: 300;
-  line-height: 32px;
-  font-size: 18px;
-  max-width: 730px;
+  line-height: ${rem('32px')};
+  font-size: ${rem('18px')};
+  max-width: ${rem('730px')};
 
   ${({ card }) =>
     card &&
     css`
-      min-height: 100px;
+      min-height: ${rem('100px')};
     `}
   b {
     color: ${({ theme }) => theme.primaryBlue};
