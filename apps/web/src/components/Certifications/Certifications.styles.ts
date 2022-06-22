@@ -1,4 +1,5 @@
 import { rem } from 'polished';
+import { mediaQueries } from 'src/styles';
 import styled from 'styled-components';
 import { flexbox, gridGap, layout, space } from 'styled-system';
 
@@ -13,6 +14,9 @@ export const CertificateBox = styled.div<CertificationsProps>`
   ${layout}
   ${space}
   ${gridGap}
+  min-width: fit-content;
 
-  min-width: ${rem('650px')};
+  ${mediaQueries.lg} {
+    min-width: ${rem('650px')};
+  }
 `;
