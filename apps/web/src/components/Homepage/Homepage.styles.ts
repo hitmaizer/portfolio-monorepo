@@ -1,3 +1,4 @@
+import { rem } from 'polished';
 import { mediaQueries } from 'src/styles';
 import styled from 'styled-components';
 import { flexbox, gridGap, layout, space } from 'styled-system';
@@ -12,10 +13,10 @@ export const Homepage = styled.main`
   align-items: center;
   justify-content: center;
   background-color: ${({ theme }) => theme.body};
-  padding: 16px;
+  padding: ${rem('16px')};
   ${mediaQueries.lg} {
     margin-top: 0;
-    padding: 32px;
+    padding: ${rem('32px')};
   }
 `;
 
@@ -26,6 +27,6 @@ export const HomeStack = styled.div<HomepageProps>`
   ${gridGap}
 
   ${mediaQueries.lg} {
-    gap: 32px;
+    gap: ${rem('32px')};
   }
 `;
