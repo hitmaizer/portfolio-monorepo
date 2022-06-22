@@ -1,24 +1,21 @@
 import Certifications from '@components/Certifications';
 import Header from '@components/Header';
 import Hobbies from '@components/Hobbies';
-import { Homepage } from '@components/Homepage/Homepage.styles';
+import { Homepage, HomeStack } from '@components/Homepage/Homepage.styles';
 import Intro from '@components/Intro';
 import Section from '@components/Section';
 import Socials from '@components/Socials';
 import Works from '@components/Works';
 import type { GetStaticProps, NextPage } from 'next';
 
-import { Stack } from '@components';
-
 const Home: NextPage = ({ works }: any) => {
   return (
     <Homepage>
-      <Stack display="flex" vertical gridGap="32px">
+      <HomeStack display="flex" flexDirection="column" gridGap="16px">
         <Header
           display="flex"
           justifyContent="space-between"
-          gridGap="32px"
-          mt="32px"
+          gridGap="16px"
           flexDirection="column"
         >
           <Intro />
@@ -27,14 +24,14 @@ const Home: NextPage = ({ works }: any) => {
         <Section
           display="flex"
           justifyContent="space-between"
-          gridGap="32px"
+          gridGap="16px"
           flexDirection="column"
         >
           <Hobbies />
           <Certifications />
         </Section>
         <Works id="works" worksData={works.data} />
-      </Stack>
+      </HomeStack>
     </Homepage>
   );
 };
