@@ -7,8 +7,9 @@ export const Header = styled.header`
   ${flexbox}
   ${space}
   ${gridGap}
-
+  
   ${mediaQueries.lg} {
     flex-direction: row;
+    gap: 32px;
   }
 `;
