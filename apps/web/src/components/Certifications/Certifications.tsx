@@ -66,7 +66,7 @@ const Certifications = ({ children, ...rest }: CertificationsProps) => {
             familiar with package managers like <b>NPM</b>, and mainly{' '}
             <b>Yarn</b>.
           </Text>
-          <Heading fontWeight="bold" size="2xl" mt={4}>
+          <Heading fontWeight="bold" size="2xl" mt={rem('80px')}>
             Certificates
           </Heading>
           <Stack
@@ -74,17 +74,18 @@ const Certifications = ({ children, ...rest }: CertificationsProps) => {
             vertical
             width="100%"
             placeItems="flex-start"
-            gridGap={rem('32px')}
+            gridGap={rem('64px')}
+            mt={rem('32px')}
           >
             <a
               href="https://www.iscedouro.pt/pt/Oferta-formativa/1-%C2%BA-Ciclo-Licenciaturas/Producao-de-Conteudos-Interativos-e-Multimedia/"
               target="_blank"
               rel="noreferrer"
             >
-              <Stack
+              <S.CertificateBox
                 display="flex"
                 alignItems="center"
-                justifyContent="center"
+                justifyContent="flex-start"
                 width="100%"
                 gridGap={rem('32px')}
                 mt={rem('32px')}
@@ -100,17 +101,17 @@ const Certifications = ({ children, ...rest }: CertificationsProps) => {
                     content
                   </Text>
                 </Stack>
-              </Stack>
+              </S.CertificateBox>
             </a>
             <a
               href="https://devchallenges.io/certificates/zPgyDxXXQyAAbf21bMRs"
               target="_blank"
               rel="noreferrer"
             >
-              <Stack
+              <S.CertificateBox
                 display="flex"
                 alignItems="center"
-                justifyContent="center"
+                justifyContent="flex-start"
                 width="100%"
                 gridGap={rem('32px')}
                 mt={rem('32px')}
@@ -125,22 +126,22 @@ const Certifications = ({ children, ...rest }: CertificationsProps) => {
                     8 real-life like pratical challenges by devChallenges.io
                   </Text>
                 </Stack>
-              </Stack>
+              </S.CertificateBox>
             </a>
             <a
               href="https://www.freecodecamp.org/certification/hitmaizer/responsive-web-design"
               target="_blank"
               rel="noreferrer"
             >
-              <Stack
+              <S.CertificateBox
                 display="flex"
                 alignItems="center"
-                justifyContent="center"
+                justifyContent="flex-start"
                 width="100%"
                 gridGap={rem('32px')}
                 mt={rem('32px')}
               >
-                <Image src="/freeCode.png" width="100px" height="100px" />
+                <Image src="/freeCode.png" width="145px" height="145px" />
                 <Stack display="flex" vertical gridGap={rem('8px')}>
                   <Heading subtitle>Sep 2020 - Feb 2021</Heading>
                   <Heading oxygen size="lg" fontWeight="bold">
@@ -151,17 +152,16 @@ const Certifications = ({ children, ...rest }: CertificationsProps) => {
                     approximately 300 hours of coursework.
                   </Text>
                 </Stack>
-              </Stack>
+              </S.CertificateBox>
             </a>
             <a
               href="https://devchallenges.io/certificates/FAn2CzkmrfG7oRcfTZWE"
               target="_blank"
               rel="noreferrer"
             >
-              <Stack
+              <S.CertificateBox
                 display="flex"
                 alignItems="center"
-                justifyContent="center"
                 width="100%"
                 gridGap={rem('32px')}
                 mt={rem('32px')}
@@ -176,7 +176,7 @@ const Certifications = ({ children, ...rest }: CertificationsProps) => {
                     8 real-life like pratical challenges by devChallenges.io
                   </Text>
                 </Stack>
-              </Stack>
+              </S.CertificateBox>
             </a>
           </Stack>
           {children}
