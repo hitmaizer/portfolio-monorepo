@@ -7,10 +7,10 @@ import {
   SpaceProps,
 } from 'styled-system';
 
-export interface IntroProps
-  extends SpaceProps,
-    FlexboxProps,
+export interface SectionProps
+  extends FlexboxProps,
     LayoutProps,
+    SpaceProps,
     GridGapProps {
   children?: ReactNode;
 }

@@ -4,11 +4,16 @@ import {
   Github,
   Dribbble,
 } from '@styled-icons/boxicons-logos';
+import { mediaQueries } from 'src/styles';
 import styled from 'styled-components';
 
 export const Socials = styled.div`
   width: 100%;
-  max-width: 334px;
+
+  ${mediaQueries.lg} {
+    width: 100%;
+    max-width: max-content;
+  }
 `;
 
 export const TwitterLogo = styled(Twitter)`

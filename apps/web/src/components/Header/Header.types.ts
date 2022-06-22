@@ -7,7 +7,7 @@ import {
   SpaceProps,
 } from 'styled-system';
 
-export interface IntroProps
+export interface HeaderProps
   extends SpaceProps,
     FlexboxProps,
     LayoutProps,
