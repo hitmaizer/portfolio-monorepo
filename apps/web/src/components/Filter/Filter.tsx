@@ -3,6 +3,7 @@ import React from 'react';
 import Button from '@components/Button';
 import Card from '@components/Card';
 import Stack from '@components/Stack';
+import { rem } from 'polished';
 
 import * as S from './Filter.styles';
 import { FilterProps } from './Filter.types';
@@ -11,7 +12,7 @@ const Filter = ({ children, ...rest }: FilterProps) => {
   return (
     <S.Filter {...rest}>
       <Card>
-        <Stack display="flex" alignItems="center" gridGap="16px">
+        <Stack display="flex" alignItems="center" gridGap={rem('16px')}>
           <Button filterBtn selected>
             All
           </Button>

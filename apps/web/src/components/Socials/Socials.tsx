@@ -4,6 +4,7 @@ import Button from '@components/Button';
 import Card from '@components/Card';
 import Heading from '@components/Heading';
 import Stack from '@components/Stack';
+import { rem } from 'polished';
 
 import * as S from './Socials.styles';
 import { SocialsProps } from './Socials.types';
@@ -15,7 +16,7 @@ const Socials = ({ children, ...rest }: SocialsProps) => {
         <Stack
           display="flex"
           vertical
-          gridGap="24px"
+          gridGap={rem('24px')}
           justifyContent="center"
           alignItems="center"
           height="100%"
@@ -26,7 +27,7 @@ const Socials = ({ children, ...rest }: SocialsProps) => {
           <Stack
             display="flex"
             alignItems="center"
-            gridGap="8px"
+            gridGap={rem('8px')}
             placeContent="center"
           >
             <a

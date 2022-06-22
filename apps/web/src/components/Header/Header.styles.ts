@@ -1,3 +1,4 @@
+import { rem } from 'polished';
 import { mediaQueries } from 'src/styles';
 import styled from 'styled-components';
 import { flexbox, gridGap, layout, space } from 'styled-system';
@@ -10,6 +11,6 @@ export const Header = styled.header`
   
   ${mediaQueries.lg} {
     flex-direction: row;
-    gap: 32px;
+    gap: ${rem('32px')};
   }
 `;

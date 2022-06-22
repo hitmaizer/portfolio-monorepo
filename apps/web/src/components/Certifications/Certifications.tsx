@@ -5,6 +5,7 @@ import Heading from '@components/Heading';
 import Stack from '@components/Stack';
 import Text from '@components/Text';
 import Image from 'next/image';
+import { rem } from 'polished';
 
 import * as S from './Certifications.styles';
 import { CertificationsProps } from './Certifications.types';
@@ -17,7 +18,7 @@ const Certifications = ({ children, ...rest }: CertificationsProps) => {
           display="flex"
           vertical
           alignItems="center"
-          gridGap="16px"
+          gridGap={rem('16px')}
           placeItems="flex-start"
         >
           <Heading oxygen size="lg" fontWeight="bold">
@@ -27,7 +28,11 @@ const Certifications = ({ children, ...rest }: CertificationsProps) => {
             Who am I?
           </Heading>
           <Stack display="flex" justifyContent="center" width="100%">
-            <Image src="/dev-light.svg" width="247px" height="324px" />
+            <Image
+              src="/dev-light.svg"
+              width={rem('247px')}
+              height={rem('324px')}
+            />
           </Stack>
           <Text>
             My name is <b>José Eduardo Alves</b>, I&apos;m on my early 30&apos;s
@@ -69,7 +74,7 @@ const Certifications = ({ children, ...rest }: CertificationsProps) => {
             vertical
             width="100%"
             placeItems="flex-start"
-            gridGap="32px"
+            gridGap={rem('32px')}
           >
             <a
               href="https://www.iscedouro.pt/pt/Oferta-formativa/1-%C2%BA-Ciclo-Licenciaturas/Producao-de-Conteudos-Interativos-e-Multimedia/"
@@ -81,11 +86,11 @@ const Certifications = ({ children, ...rest }: CertificationsProps) => {
                 alignItems="center"
                 justifyContent="center"
                 width="100%"
-                gridGap="32px"
-                mt="32px"
+                gridGap={rem('32px')}
+                mt={rem('32px')}
               >
                 <Image src="/isceDouro.png" width="100px" height="100px" />
-                <Stack display="flex" vertical gridGap="8px">
+                <Stack display="flex" vertical gridGap={rem('8px')}>
                   <Heading subtitle>Sep 2019 - Jun 2022</Heading>
                   <Heading oxygen size="lg" fontWeight="bold">
                     Interactive Multimedia Content Creation
@@ -107,11 +112,11 @@ const Certifications = ({ children, ...rest }: CertificationsProps) => {
                 alignItems="center"
                 justifyContent="center"
                 width="100%"
-                gridGap="32px"
-                mt="32px"
+                gridGap={rem('32px')}
+                mt={rem('32px')}
               >
                 <Image src="/devchallenges.jpg" width="100px" height="100px" />
-                <Stack display="flex" vertical gridGap="8px">
+                <Stack display="flex" vertical gridGap={rem('8px')}>
                   <Heading subtitle>Feb 2022 - Mar 2022</Heading>
                   <Heading oxygen size="lg" fontWeight="bold">
                     Front End Developer
@@ -132,11 +137,11 @@ const Certifications = ({ children, ...rest }: CertificationsProps) => {
                 alignItems="center"
                 justifyContent="center"
                 width="100%"
-                gridGap="32px"
-                mt="32px"
+                gridGap={rem('32px')}
+                mt={rem('32px')}
               >
                 <Image src="/freeCode.png" width="100px" height="100px" />
-                <Stack display="flex" vertical gridGap="8px">
+                <Stack display="flex" vertical gridGap={rem('8px')}>
                   <Heading subtitle>Sep 2020 - Feb 2021</Heading>
                   <Heading oxygen size="lg" fontWeight="bold">
                     Responsive Web Design
@@ -158,11 +163,11 @@ const Certifications = ({ children, ...rest }: CertificationsProps) => {
                 alignItems="center"
                 justifyContent="center"
                 width="100%"
-                gridGap="32px"
-                mt="32px"
+                gridGap={rem('32px')}
+                mt={rem('32px')}
               >
                 <Image src="/devchallenges.jpg" width="100px" height="100px" />
-                <Stack display="flex" vertical gridGap="8px">
+                <Stack display="flex" vertical gridGap={rem('8px')}>
                   <Heading subtitle>Jan 2022 - Feb 2022</Heading>
                   <Heading oxygen size="lg" fontWeight="bold">
                     Responsive Web Developer
