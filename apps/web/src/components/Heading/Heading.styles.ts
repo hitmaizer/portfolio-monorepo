@@ -1,3 +1,4 @@
+import { rem } from 'polished';
 import styled, { css } from 'styled-components';
 import { color, space, textAlign, typography, variant } from 'styled-system';
 
@@ -31,7 +32,7 @@ const size = variant({
 
 export const Heading = styled.h1<HeadingProps>`
   font-family: ${({ theme }) => theme.fonts.montserrat};
-  max-width: 940px;
+  max-width: ${rem('940px')};
   color: ${({ theme }) => theme.text};
 
   ${textAlign}
@@ -52,8 +53,8 @@ export const Heading = styled.h1<HeadingProps>`
     css`
       font-family: ${({ theme }) => theme.fonts.montserrat};
       font-weight: 500;
-      font-size: 14px;
-      line-height: 17px;
+      font-size: ${rem('14px')};
+      line-height: ${rem('17px')};
       color: ${({ theme }) => theme.subText};
     `}
 `;
