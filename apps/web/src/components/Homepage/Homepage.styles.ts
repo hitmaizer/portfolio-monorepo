@@ -1,4 +1,8 @@
+import { mediaQueries } from 'src/styles';
 import styled from 'styled-components';
+import { flexbox, gridGap, layout, space } from 'styled-system';
+
+import { HomepageProps } from './Homepage.types';
 
 export const Homepage = styled.main`
   min-width: 100vw;
@@ -8,4 +12,20 @@ export const Homepage = styled.main`
   align-items: center;
   justify-content: center;
   background-color: ${({ theme }) => theme.body};
+  padding: 16px;
+  ${mediaQueries.lg} {
+    margin-top: 0;
+    padding: 32px;
+  }
+`;
+
+export const HomeStack = styled.div<HomepageProps>`
+  ${layout}
+  ${flexbox}
+  ${space}
+  ${gridGap}
+
+  ${mediaQueries.lg} {
+    gap: 32px;
+  }
 `;
