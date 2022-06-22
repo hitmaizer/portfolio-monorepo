@@ -10,5 +10,6 @@ export const Section = styled.section`
 
   ${mediaQueries.lg} {
     flex-direction: row;
+    gap: 32px;
   }
 `;
