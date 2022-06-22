@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Homepage = styled.div`
+export const Homepage = styled.main`
   min-width: 100vw;
   min-height: 100vh;
   display: flex;
