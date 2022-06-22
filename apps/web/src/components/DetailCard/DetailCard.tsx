@@ -8,6 +8,7 @@ import Stack from '@components/Stack';
 import Text from '@components/Text';
 import { StyledImage } from '@components/WorkCard/WorkCard.styles';
 import Link from 'next/link';
+import { rem } from 'polished';
 
 import * as S from './DetailCard.styles';
 import { DetailCardProps } from './DetailCard.types';
@@ -26,7 +27,7 @@ const DetailCard = ({
   return (
     <S.DetailCard {...rest}>
       <Card>
-        <Stack display="flex" gridGap="32px" alignItems="center">
+        <Stack display="flex" gridGap={rem('32px')} alignItems="center">
           <Box width="50%" height="700px" position="relative">
             <StyledImage
               src={image!}
@@ -43,7 +44,7 @@ const DetailCard = ({
             <Text maxWidth="200px">{`${description!}`}</Text>
             {link == null ? (
               <>
-                <Stack display="flex" gridGap="8px">
+                <Stack display="flex" gridGap={rem('8px')}>
                   <Button primary>
                     <a href={demo} target="_blank" rel="noreferrer">
                       Demo
@@ -65,7 +66,7 @@ const DetailCard = ({
                 </Button>
               </>
             )}
-            <Heading oxygen fontWeight="bold" size="lg" mt="32px">
+            <Heading oxygen fontWeight="bold" size="lg" mt={rem('32px')}>
               <Link href="/#works" passHref>
                 Back to Works
               </Link>

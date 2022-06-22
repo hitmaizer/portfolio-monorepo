@@ -1,3 +1,4 @@
+import { rem } from 'polished';
 import styled, { keyframes } from 'styled-components';
 import { flexbox, layout, space } from 'styled-system';
 
@@ -13,15 +14,15 @@ export const Loading = styled.div<LoadingProps>`
   ${flexbox}
   ${space}
   width: 100%;
-  min-height: 300px;
+  min-height: ${rem('300px')};
 `;
 
 export const Bouncer = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
-  width: 100px;
-  height: 100px;
+  width: ${rem('100px')};
+  height: ${rem('100px')};
   animation: ${bouncer} 0.6s 0.1s ease infinite alternate;
   & > *:nth-child(1) {
     animation: ${bouncer} 0.6s 0.1s ease infinite alternate;
@@ -42,8 +43,8 @@ export const Bouncer = styled.div`
 `;
 
 export const Ball = styled.div`
-  width: 20px;
-  height: 20px;
+  width: ${rem('20px')};
+  height: ${rem('20px')};
   background-color: ${({ theme }) => theme.primaryBlue};
   border-radius: 50%;
 `;

@@ -7,6 +7,7 @@ import Heading from '@components/Heading';
 import Stack from '@components/Stack';
 import Text from '@components/Text';
 import Link from 'next/link';
+import { rem } from 'polished';
 
 import * as S from './WorkCard.styles';
 import { WorkCardProps } from './WorkCard.types';
@@ -24,7 +25,7 @@ const WorkCard = ({
     <S.WorkCard {...rest}>
       <Card>
         <Link href={`work/${slug}`}>
-          <Stack display="flex" vertical gridGap="16px">
+          <Stack display="flex" vertical gridGap={rem('16px')}>
             <Box width="395px" height="200px" position="relative">
               <S.StyledImage
                 src={imgSrc!}

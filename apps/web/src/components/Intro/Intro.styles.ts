@@ -1,4 +1,5 @@
 import { Envelope, Phone } from '@styled-icons/boxicons-solid';
+import { rem } from 'polished';
 import { mediaQueries } from 'src/styles';
 import styled from 'styled-components';
 import { flexbox, gridGap, layout, space } from 'styled-system';
@@ -10,12 +11,12 @@ export const Intro = styled.div`
 `;
 
 export const EmailIcon = styled(Envelope)`
-  width: 24px;
+  width: ${rem('24px')};
   color: ${({ theme }) => theme.text};
 `;
 
 export const PhoneIcon = styled(Phone)`
-  width: 24px;
+  width: ${rem('24px')};
   color: ${({ theme }) => theme.text};
 `;
 
