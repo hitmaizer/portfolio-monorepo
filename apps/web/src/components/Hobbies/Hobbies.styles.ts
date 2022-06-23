@@ -3,7 +3,6 @@ import styled from 'styled-components';
 
 export const Hobbies = styled.div`
   width: 100%;
-  max-width: fit-content;
   order: 2;
 
   ${mediaQueries.lg} {
