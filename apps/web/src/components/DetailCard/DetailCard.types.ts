@@ -1,6 +1,17 @@
 import { ReactNode } from 'react';
 
-export interface DetailCardProps {
+import {
+  FlexboxProps,
+  GridGapProps,
+  LayoutProps,
+  SpaceProps,
+} from 'styled-system';
+
+export interface DetailCardProps
+  extends FlexboxProps,
+    SpaceProps,
+    LayoutProps,
+    GridGapProps {
   children?: ReactNode;
   code?: string;
   link?: string | null;

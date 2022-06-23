@@ -27,8 +27,8 @@ const DetailCard = ({
   return (
     <S.DetailCard {...rest}>
       <Card>
-        <Stack display="flex" gridGap={rem('32px')} alignItems="center">
-          <Box width="50%" height="700px" position="relative">
+        <S.CardFlex display="flex" gridGap={rem('32px')} alignItems="center">
+          <Box width="100%" height="80vh" position="relative">
             <StyledImage
               src={image!}
               width="100%"
@@ -36,12 +36,12 @@ const DetailCard = ({
               layout="fill"
             />
           </Box>
-          <Stack display="flex" vertical gridGap="16px">
+          <Stack display="flex" vertical gridGap={rem('16px')}>
             <Heading subtitle>{`# ${category}`}</Heading>
             <Heading fontWeight="bold" size="xl">
               {title}
             </Heading>
-            <Text maxWidth="200px">{`${description!}`}</Text>
+            <Text maxWidth={rem('200px')}>{`${description!}`}</Text>
             {link == null ? (
               <>
                 <Stack display="flex" gridGap={rem('8px')}>
@@ -66,14 +66,14 @@ const DetailCard = ({
                 </Button>
               </>
             )}
-            <Heading oxygen fontWeight="bold" size="lg" mt={rem('32px')}>
+            <Heading oxygen fontWeight="bold" size="lg" mt={rem('16px')}>
               <Link href="/#works" passHref>
                 Back to Works
               </Link>
             </Heading>
             {children}
           </Stack>
-        </Stack>
+        </S.CardFlex>
       </Card>
     </S.DetailCard>
   );
