@@ -28,11 +28,7 @@ const Certifications = ({ children, ...rest }: CertificationsProps) => {
             Who am I?
           </Heading>
           <Stack display="flex" justifyContent="center" width="100%">
-            <Image
-              src="/dev-light.svg"
-              width={rem('247px')}
-              height={rem('324px')}
-            />
+            <Image src="/dev-light.svg" width="247px" height="324px" />
           </Stack>
           <Text>
             My name is <b>José Eduardo Alves</b>, I&apos;m on my early 30&apos;s
@@ -74,7 +70,7 @@ const Certifications = ({ children, ...rest }: CertificationsProps) => {
             vertical
             width="100%"
             placeItems="flex-start"
-            gridGap={rem('64px')}
+            gridGap={rem('32px')}
             mt={rem('32px')}
           >
             <a
@@ -88,7 +84,7 @@ const Certifications = ({ children, ...rest }: CertificationsProps) => {
                 justifyContent="flex-start"
                 width="100%"
                 gridGap={rem('32px')}
-                mt={rem('32px')}
+                mt={rem('16px')}
               >
                 <Image src="/isceDouro.png" width="100px" height="100px" />
                 <Stack display="flex" vertical gridGap={rem('8px')}>
