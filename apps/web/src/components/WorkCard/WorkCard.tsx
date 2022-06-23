@@ -26,7 +26,7 @@ const WorkCard = ({
       <Card>
         <Link href={`work/${slug}`}>
           <Stack display="flex" vertical gridGap={rem('16px')}>
-            <Box width="395px" height="200px" position="relative">
+            <Box width="100%" height="25vh" position="relative">
               <S.StyledImage
                 src={imgSrc!}
                 width="100%"
