@@ -45,25 +45,19 @@ const DetailCard = ({
             {link == null ? (
               <>
                 <Stack display="flex" gridGap={rem('8px')}>
-                  <Button primary>
-                    <a href={demo} target="_blank" rel="noreferrer">
-                      Demo
-                    </a>
-                  </Button>
-                  <Button outline>
-                    <a href={code} target="_blank" rel="noreferrer">
-                      Code
-                    </a>
-                  </Button>
+                  <a href={demo} target="_blank" rel="noreferrer">
+                    <Button primary>Demo</Button>
+                  </a>
+                  <a href={code} target="_blank" rel="noreferrer">
+                    <Button outline>Code</Button>
+                  </a>
                 </Stack>
               </>
             ) : (
               <>
-                <Button primary>
-                  <a href={link} target="_blank" rel="noreferrer">
-                    See More
-                  </a>
-                </Button>
+                <a href={link} target="_blank" rel="noreferrer">
+                  <Button primary>See More</Button>
+                </a>
               </>
             )}
             <Heading oxygen fontWeight="bold" size="lg" mt={rem('16px')}>
