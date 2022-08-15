@@ -43,6 +43,7 @@ export const Button = styled.button<ButtonProps>`
     css`
       border: ${rem('2px')} solid ${({ theme }) => theme.primaryBlue};
       background: transparent;
+      color: ${({ theme }) => theme.primaryBlue};
       a {
         font-weight: 600;
         transition: all 300ms ease;
