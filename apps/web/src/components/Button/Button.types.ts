@@ -6,4 +6,5 @@ export interface ButtonProps {
   primary?: boolean;
   filterBtn?: boolean;
   selected?: boolean;
+  onClick?: () => void;
 }
