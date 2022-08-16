@@ -22,7 +22,7 @@ export const Grid = styled.div`
 
   ${mediaQueries.xl} {
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(3, 1fr);
     gap: ${rem('32px')};
     max-width: ${rem('1440px')};
   }
