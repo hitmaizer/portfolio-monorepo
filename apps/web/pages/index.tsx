@@ -30,7 +30,7 @@ const Home: NextPage = ({ works }: any) => {
           <Hobbies />
           <Certifications />
         </Section>
-        <Works id="works" worksData={works.data} />
+        <Works id="works" worksData={works} />
       </HomeStack>
     </Homepage>
   );
@@ -43,7 +43,7 @@ export const getStaticProps: GetStaticProps = async () => {
   const works = await request.json();
   return {
     props: {
-      works,
+      works: works.data,
       revalidate: 43200,
     },
   };
