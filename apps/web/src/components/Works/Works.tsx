@@ -14,7 +14,7 @@ const Works = ({ children, worksData, ...rest }: WorksProps) => {
   const error = useSelector((state: RootState) => state.error.error);
 
   return (
-    <S.Works {...rest}>
+    <S.Works {...rest} id="works">
       {loading === false && (
         <Grid>
           {worksData.map((work: WorkObj) => (
