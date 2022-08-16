@@ -35,7 +35,7 @@ const WorkCard = ({
               />
             </Box>
             <Heading subtitle>{`# ${category}`}</Heading>
-            <Heading fontWeight="bold" size="xl">
+            <Heading fontWeight="bold" size="lg">
               {title}
             </Heading>
             <Text minHeight="500px" card>{`${description!.substring(
