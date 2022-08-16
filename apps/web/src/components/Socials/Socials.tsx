@@ -10,6 +10,11 @@ import * as S from './Socials.styles';
 import { SocialsProps } from './Socials.types';
 
 const Socials = ({ children, ...rest }: SocialsProps) => {
+  const handleScroll = () => {
+    const section = document.querySelector('#works');
+    section?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+
   return (
     <S.Socials {...rest}>
       <Card>
@@ -59,8 +64,8 @@ const Socials = ({ children, ...rest }: SocialsProps) => {
               <S.TwitterLogo />
             </a>
           </Stack>
-          <Button primary>
-            <a href="#works">Let&apos;s see some works!</a>
+          <Button onClick={handleScroll} primary>
+            Let&apos;s see some works!
           </Button>
         </Stack>
       </Card>
